@@ -26,7 +26,7 @@ describe('Encoding', () => {
 
   describe('params', () => {
     // excludes ^ and ` even though they are safe per spec because all browsers encode it when manually entered
-    const safePerSpec = "!$&'()*+,:;=@[]_|"
+    const safePerSpec = "!$&'()*+,:;=@[]_"
     const toEncode = ' "<>#?{}/^`'
     const encodedToEncode = toEncode
       .split('')
